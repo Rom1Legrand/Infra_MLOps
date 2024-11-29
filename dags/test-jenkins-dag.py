@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 import requests
 from requests.auth import HTTPBasicAuth
 import json
+import os
 
 default_args = {
     'owner': 'airflow',
@@ -17,8 +18,8 @@ default_args = {
 
 def test_jenkins_connection():
     jenkins_url = "http://jenkins:8080"
-    jenkins_user = "xxxx"  # Remplacez par votre utilisateur Jenkins
-    jenkins_password = "xxxx"  # Remplacez par votre mot de passe Jenkins
+    jenkins_user = os.environ.get('JENKINS_ADMIN_ID')  # Remplacez par votre utilisateur Jenkins
+    jenkins_password = os.environ.get('JENKINS_ADMIN_PASSWORD')  # Remplacez par votre mot de passe Jenkins
     
     try:
         # Test basique de connexion
