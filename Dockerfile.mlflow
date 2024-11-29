@@ -17,12 +17,7 @@ RUN pip install -r requirements.txt
 EXPOSE 5000
 
 # Commande de démarrage avec authentification
-CMD mlflow server \
-    --host 0.0.0.0 \
-    --port 5000 \
-    --backend-store-uri ${NEON_DATABASE_URL} \
-    --default-artifact-root s3://${S3_BUCKET}/mlflow/ \
-    --serve-artifacts
+CMD ["mlflow", "server", "--host", "0.0.0.0", "--port", "5000", "--backend-store-uri", "${NEON_DATABASE_URL}", "--default-artifact-root", "s3://${S3_BUCKET}/mlflow/", "--serve-artifacts"]
 
 
     
