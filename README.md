@@ -25,7 +25,6 @@ Une infrastructure MLOps complète permettant de gérer le cycle de vie des mod�
 ├── requirements.mlflow.txt
 ├── requirements.streamlit.txt
 ├── jenkins-requirements-optimized.txt
-├── jenkins_plugins.txt
 ├── dags/                     # Dossier pour les DAGs Airflow
 ├── logs/                     # Logs Airflow
 ├── plugins/                  # Plugins Airflow
