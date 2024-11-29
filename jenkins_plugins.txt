@@ -1,9 +1,0 @@
-# Base plugins
-workflow-aggregator
-git
-pipeline-model-definition
-python
-
-# Monitoring
-junit
-mailer

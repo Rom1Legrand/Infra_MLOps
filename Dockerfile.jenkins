@@ -13,9 +13,6 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-# Installation des plugins Jenkins
-COPY jenkins_plugins.txt /usr/share/jenkins/ref/plugins.txt
-RUN jenkins-plugin-cli -f /usr/share/jenkins/ref/plugins.txt
 
 # Création et activation de l'environnement virtuel
 RUN python3 -m venv /opt/venv
