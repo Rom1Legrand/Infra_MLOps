@@ -1,0 +1,10 @@
+requests
+joblib
+scikit-learn
+geopy
+sqlalchemy
+psycopg2-binary
+boto3
+python-dotenv
+imbalanced-learn
+mlflow==2.11.1

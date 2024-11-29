@@ -1,0 +1,5 @@
+# Seuls les packages vraiment nécessaires pour Jenkins
+evidently==0.4.17  # Pour l'analyse des drifts
+requests  # Pour les appels API (déjà dans Airflow mais nécessaire ici)
+python-dotenv  # Pour la gestion des variables d'environnement (idem)
+mlflow==2.11.1

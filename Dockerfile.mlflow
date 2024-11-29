@@ -1,0 +1,28 @@
+FROM python:3.9-slim
+
+WORKDIR /mlflow
+
+# Installation des dépendances système
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libpq-dev \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+# Installation des dépendances Python
+COPY requirements.mlflow.txt requirements.txt
+RUN pip install -r requirements.txt
+
+# Exposition du port MLflow
+EXPOSE 5000
+
+# Commande de démarrage avec authentification
+CMD mlflow server \
+    --host 0.0.0.0 \
+    --port 5000 \
+    --backend-store-uri ${NEON_DATABASE_URL} \
+    --default-artifact-root s3://${S3_BUCKET}/mlflow/ \
+    --serve-artifacts
+
+
+    
