@@ -37,7 +37,6 @@ Une infrastructure MLOps complète permettant de gérer le cycle de vie des mod�
 ### 1. Création des Répertoires et fichier
 dags logs plugins streamlit
 app.py
-```
 
 ### 2. Configuration S3
 1. Créer un bucket S3 sur AWS
