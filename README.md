@@ -34,10 +34,9 @@ Une infrastructure MLOps complète permettant de gérer le cycle de vie des mod�
 
 ## ⚙️ Configuration Initiale
 
-### 1. Création de Répertoires et fichiers (voir chap Installation et Démarrage)
+### 1. Création de fichiers (voir chap Installation et Démarrage)
 ```bash
-répértoire à créer : \dags \logs \plugins \streamlit
-fichier ç créer :  app.py
+fichier à créer :  app.py
 ```
 
 ### 2. Configuration S3
@@ -119,9 +118,8 @@ git clone [your-repo-url]
 cd [your-repo-name]
 ```
 
-2. Créer les répertoires et fichiers nécessaires :
+2. Créer le fichier nécessaire :
 ```bash
-mkdir -p dags logs plugins streamlit
 touch streamlit/app.py
 ```
 
