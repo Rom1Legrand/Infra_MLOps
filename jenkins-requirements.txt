@@ -1,0 +1,14 @@
+# Seuls les packages vraiment nécessaires pour Jenkins
+
+# MLOps essentials
+mlflow==2.11.1  # Inclut déjà numpy, pandas, scikit-learn, psycopg2-binary
+evidently==0.4.17  # Pour l'analyse des drifts
+
+# Utilities
+requests  # Pour les appels API
+python-dotenv  # Pour la gestion des variables d'environnement
+
+# Quality assurance (spécifique à Jenkins)
+pytest  # Pour les tests unitaires
+black # Pour le formatage du code
+pylint # Pour l'analyse statique du code
