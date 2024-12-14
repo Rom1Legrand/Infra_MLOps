@@ -100,7 +100,7 @@ Choose one of the following options:
 
 The project uses two configuration files:
 
-### .env (Non-sensitive variables)
+### .env (less-sensitive variables - do not version)
 ```bash
 # System Configuration
 AIRFLOW_UID=50000
